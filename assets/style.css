@@ -1,0 +1,363 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #F4F3EE;
+}
+
+.navbar {
+    background-color: #ede0d4;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar::-webkit-scrollbar {
+    display: none;
+}
+
+.navlink {
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #463f3a;
+    transition: 0.5s;
+}
+
+.navlink:hover {
+    color: #bcb8b1;
+}
+
+.active {
+    color: #8a817c;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    text-align-last: center;
+    padding: 16px;
+    list-style-type: none;
+}
+
+li a {
+    color: rgb(201, 236, 236);
+}
+
+#container #content .view-4 video {
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------------- Scroll bar ----------------- */
+#container::-webkit-scrollbar {
+    width: 13px;
+}
+
+#container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#container::-webkit-scrollbar-thumb {
+    background: #8a817c;
+    border-radius: 3vh;
+}
+
+#container::-webkit-scrollbar-thumb:hover {
+    background: #bcb8b1;
+}
+
+/*----------------- Index -----------------*/
+
+.line {
+    background-color: #8a817c;
+    width: 100%;
+    height: 2px;
+    transition: 0.5s;
+}
+
+.active:hover .line {
+    background-color: #bcb8b1;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    padding-top: 55.6px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.kiri {
+    width: 63%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.judul-1 {
+    font-size: 60px;
+    display: flex;
+}
+
+.font-1 {
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F4F3EE;
+    z-index: 10;
+    
+}
+
+.font-2 {
+    position: absolute;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    background-color: #F4F3EE;
+    transition: 1s;
+}
+
+.kiri:hover .font-2 {
+    transform: translateX(191px);
+}
+
+.deskripsi-1 {
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    margin-top: 18px;
+    margin-bottom: 36px;
+
+}
+
+.button-1 {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 12px;
+    background-color: transparent;
+    transition: 1s;
+}
+
+.button-1:hover {
+    background-color: rgba(138, 129, 124, 0.3);
+    color: black;
+}
+
+.kanan {
+    width: 37%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.judul-2 {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #7F5539;
+}
+
+.view-1 {
+    padding-left: 18px;
+    padding-right: 18px;
+    display: flex;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    position: relative;
+    height: calc(100vh - 18px);
+}
+
+.image-1 {
+    width: 90%;
+    height: 100%;
+}
+
+.view-2 {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    position: relative;
+    height: calc(100vh - 18px);
+    background-color: #B08968;
+}
+
+.image-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-2 {
+    width: 75%;
+    height: 50%;
+}
+
+.card-1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    top: -5%;
+}
+
+.deskripsi-2 {
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    padding: 9px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 80%;
+    border-radius: 12px;
+    z-index: 10;
+}
+
+.view-3 {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    position: relative;
+    height: calc(100vh - 18px);
+    background-color: #DDB892;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.konten-1 {
+    width: 80%;
+    height: 80%;
+
+}
+
+.image-3 {
+    background-color: #3c50eb;
+    width: 100%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.judul-3 {
+    width: auto;
+    text-align: center;    
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.indonesia {
+    width: 80%;
+    height: 80%;    
+    background-color: #463f3a;
+}
+
+.view-4 {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.button-2 {
+    border: 2px solid;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 12px;
+    background-color: transparent;
+    border-color: #F4F3EE;
+    transition: 1s;
+    color: #F4F3EE;
+    text-decoration: none;
+}
+
+.button-2:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.judul {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    width: 59%;
+    color: #f7f7f7;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+/*----------------- Edukatif -----------------*/
+/*----------------- Galeri -----------------*/
+/*----------------- Hubungi -----------------*/
+.card {
+    background-color: #bdb76baf;
+    width: 40%;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group__input {
+    font: inherit;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: 2px solid #fff;
+    background-color: transparent;
+    transition: outline-color 500ms;
+}
+
+.input-group__input:is(:focus, :valid) {
+    outline-color: #3c50eb;
+}
+
+.input-group__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: 10px 10px;
+    color: #fff;
+    transition: translate 500ms, scale 500ms;
+}
+
+.input-group__input:focus+.input-group__label,
+.input-group__input:valid+.input-group__label {
+    padding-inline: 5px;
+    translate: 10px -14px;
+    scale: 0, 8;
+    /* background-color: #000; */
+}
