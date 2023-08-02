@@ -290,7 +290,7 @@ li a {
 
 /*----------------- Edukatif -----------------*/
 
-#carousel-content {
+.carousel-content {
     display: flex;
     flex-wrap: wrap;
     padding: 18px;
