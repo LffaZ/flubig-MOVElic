@@ -290,6 +290,10 @@ li a {
 
 /*----------------- Edukatif -----------------*/
 
+.carousel{
+    background-color: #DDB892;
+}
+
 .carousel-content {
     display: flex;
     flex-wrap: wrap;
@@ -313,11 +317,12 @@ li a {
 
 .carousel-description {
     width: 50%;
-    height: calc(100vh - 18px);
+    height: calc(80vh - 18px);
     display: flex;
     align-items: center;
     padding-left: 9px;
     padding-right: 9px;
+    background-color: rgba(237, 224, 212, 0.2);
 }
 
 .content-carousel {
@@ -332,6 +337,8 @@ li a {
 .judul-edukatif-1 {
     text-align: end;
     width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 .deskripsi-edukatif-1 {
@@ -343,6 +350,8 @@ li a {
     justify-content: space-between;
     width: 100%;
     height: 40px;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 .button-carousel {
@@ -352,6 +361,51 @@ li a {
     padding-right: 15px;
     padding-left: 15px;
     border-radius: 12px;
+}
+
+
+.timeline-edukasi{
+    padding: 18px;
+    width: 100%;
+    height: calc(100vh - 18px);
+    padding: 18px;
+    background-color: #B08968;
+}
+
+.timeline-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;  
+    flex-direction: column;
+    
+}
+
+.container-timeline{
+    width: 100%;
+    height: fit-content;
+    flex: 1;
+}
+
+.gambar-timeline{
+    background-color: #3c50eb;
+    width: 55%;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nama-model-timeline{
+    font-size: 50px;
+    width: 100%;
+    flex: 1;
+}
+
+.tahun-timeline{
+    background-color: #3c50eb;
+    width: 100%;
+    height: 10vh;
+    border-radius: 15px;
 }
 
 /*----------------- Galeri -----------------*/
