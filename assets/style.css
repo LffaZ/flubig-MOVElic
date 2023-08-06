@@ -79,7 +79,7 @@ li a {
     width: 100%;
     height: 100vh;
     position: sticky;
-    padding-top: 55.6px;
+    padding-top: 58px;
 }
 
 .copyright {
@@ -290,7 +290,7 @@ li a {
 
 /*----------------- Edukatif -----------------*/
 
-#carousel-content {
+.carousel-content {
     display: flex;
     flex-wrap: wrap;
     padding: 18px;
@@ -357,22 +357,33 @@ li a {
 /*----------------- Galeri -----------------*/
 /*----------------- Hubungi -----------------*/
 .card {
-    background-color: #bdb76baf;
-    width: 40%;
-    padding: 2vh;
-    border-radius: 20px;
-}
-
-/* .content {
-    height: 100vh;
+    position: absolute;
     display: flex;
     justify-content: center;
+    top: -5%;
+}
+.card-body {
+    font-weight: 400;
+    /* font-family: 'Montserrat', sans-serif; */
+    text-align: justify;
+    justify-content: center;
     align-items: center;
-
-} */
+    padding: 9px;
+    background-color: rgba(231, 150, 45, 0.8);
+    width: 40%;
+    border-radius: 20px;
+    z-index: 10;
+}
+.card-body h2 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+}
 
 .input-group {
     position: relative;
+    margin-bottom: 15px;
 }
 
 .input-group__input {
@@ -384,6 +395,7 @@ li a {
     outline: 2px solid #fff;
     background-color: transparent;
     transition: outline-color 500ms;
+    width: 90%;
 }
 
 .input-group__input:is(:focus, :valid) {
