@@ -289,8 +289,10 @@ li a {
 }
 
 /*----------------- Edukatif -----------------*/
-
-.carousel-content {
+.carousel{
+    background-color: #DDB892;
+}
+#carousel-content {
     display: flex;
     flex-wrap: wrap;
     padding: 18px;
@@ -313,11 +315,12 @@ li a {
 
 .carousel-description {
     width: 50%;
-    height: calc(100vh - 18px);
+    height: calc(80vh - 18px);
     display: flex;
     align-items: center;
     padding-left: 9px;
     padding-right: 9px;
+    background-color: rgba(237, 224, 212, 0.2);
 }
 
 .content-carousel {
@@ -332,6 +335,8 @@ li a {
 .judul-edukatif-1 {
     text-align: end;
     width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 .deskripsi-edukatif-1 {
@@ -343,6 +348,8 @@ li a {
     justify-content: space-between;
     width: 100%;
     height: 40px;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 .button-carousel {
@@ -354,7 +361,128 @@ li a {
     border-radius: 12px;
 }
 
+
+.timeline-edukasi{
+    padding: 18px;
+    width: 100%;
+    height: calc(100vh - 18px);
+    padding: 18px;
+    background-color: #B08968;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-content{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;  
+    flex-direction: column;
+    
+}
+
+.container-timeline{
+    width: 100%;
+    height: fit-content;
+    flex: 1;
+}
+
+.gambar-timeline{
+    background-color: #3c50eb;
+    width: 55%;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nama-model-timeline{
+    font-size: 7vh;
+    width: 100%;
+    flex: 1;
+}
+
+.tahun-timeline{
+    background-color: #3c50eb;
+    width: 100%;
+    height: 10vh;
+    border-radius: 15px;
+}
+
 /*----------------- Galeri -----------------*/
+
+.view-1-galeri{
+    background-color: #7F5539;
+    width: 100%;
+    height: calc(100vh - 18px);
+}
+
+.content-galeri{
+    padding: 18px;
+    display: flex;
+    gap: 18px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.kolom-content-galeri{
+    flex: 1;
+}
+
+
+.container-img-galeri-1{
+    position: relative;
+    height: 30%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.container-img-galeri-2{
+    position: relative;
+    height: 70%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.container-img-galeri-3{
+    position: relative;
+    height: 60%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.container-img-galeri-4{
+    position: relative;
+    height: 40%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.container-img-galeri-5{
+    position: relative;
+    height: 70%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.container-img-galeri-6{
+    position: relative;
+    height: 30%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.judul-img-galeri{
+    position: absolute;
+    bottom: 0;
+    padding-left: 9px;
+    padding-bottom: 9px;
+}
+
+.img-galeri{
+    width: 100%;
+    height: 100%;
+}
 /*----------------- Hubungi -----------------*/
 .card {
     position: absolute;
