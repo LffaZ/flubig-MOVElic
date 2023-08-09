@@ -292,7 +292,7 @@ li a {
 .carousel{
     background-color: #DDB892;
 }
-#carousel-content {
+.carousel-content {
     display: flex;
     flex-wrap: wrap;
     padding: 18px;
@@ -361,7 +361,17 @@ li a {
     border-radius: 12px;
 }
 
+.back-button {
+    padding: 8px 15px; /* atas bawah 8px kiri kanan 15px */
+    border-radius: 12px;
+    background-color: transparent;
+    transition: 1s;
+}
 
+.back-button:hover {
+    background-color: rgba(138, 129, 124, 0.3);
+    color: black;
+}
 .timeline-edukasi{
     padding: 18px;
     width: 100%;
