@@ -79,7 +79,7 @@ li a {
     width: 100%;
     height: 100vh;
     position: sticky;
-    padding-top: 58px;
+    padding-top: 55px;
 }
 
 .copyright {
@@ -291,18 +291,19 @@ li a {
 /*----------------- Edukatif -----------------*/
 .carousel{
     background-color: #DDB892;
+    height: calc(100vh - 80px);
 }
 .carousel-content {
     display: flex;
     flex-wrap: wrap;
-    padding: 18px;
+    padding: 18px 18px 0;
     justify-content: center;
     align-items: center;
 }
 
 .three-d {
     width: 50%;
-    height: calc(100vh - 18px);
+    height: calc(100vh - 110px);
     display: flex;
     align-items: center;
 }
@@ -423,7 +424,7 @@ li a {
 .view-1-galeri{
     background-color: #7F5539;
     width: 100%;
-    height: calc(100vh - 18px);
+    height: calc(100vh - 76px);
 }
 
 .content-galeri{
@@ -492,6 +493,7 @@ li a {
 .img-galeri{
     width: 100%;
     height: 100%;
+    border-radius: 30px;
 }
 /*----------------- Hubungi -----------------*/
 .card {
