@@ -94,7 +94,7 @@ li a {
 }
 
 .judul-1 {
-    font-size: 60px;
+    font-size: 100px;
     display: flex;
 }
 
@@ -105,9 +105,9 @@ li a {
     z-index: 10;
 
 }
-
 .font-2 {
     position: absolute;
+    left: 10.2%;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
@@ -115,8 +115,8 @@ li a {
     transition: 1s;
 }
 
-.kiri:hover .font-2 {
-    transform: translateX(191px);
+.judul-1:hover .font-2 {
+    transform: translateX(205px);
 }         
 
 .deskripsi-1 {
@@ -159,7 +159,8 @@ li a {
 }
 
 .view-1 {
-    padding: 18px;
+    /* padding: 18px 18px 18px 18px; */
+    padding: 18px 18px 18px 25px;
     display: flex;
     position: relative;
     height: calc(100vh - 18px);
@@ -179,6 +180,7 @@ li a {
 
 .image-div {
     width: 100%;
+    max-height: 70%;
     display: flex;
     justify-content: center;
 }
@@ -279,13 +281,13 @@ li a {
     color: black;
 }
 
-.judul {
+.judul-4 {
     position: absolute;
     top: 50%;
-    left: 16px;
+    left: 25px;
     width: 59%;
-    color: #f7f7f7;
-    /* font-family: 'Raleway', sans-serif; */
+    color: #fdffe3;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*----------------- Edukatif -----------------*/
