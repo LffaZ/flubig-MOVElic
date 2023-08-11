@@ -1,0 +1,464 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #F4F3EE;
+}
+
+.navbar {
+    background-color: #ede0d4;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+}
+.navlink {
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #463f3a;
+    transition: 0.5s;
+}
+.navlink:hover {
+    color: #bcb8b1;
+}
+.active {
+    color: #8a817c;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    float: left;
+    text-align-last: center;
+    padding: 16px;
+    list-style-type: none;
+}
+li a {
+    color: rgb(201, 236, 236);
+}
+
+
+
+/* ----------------- Scroll bar ----------------- */
+::-webkit-scrollbar {
+    width: 13px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #8a817c;
+    border-radius: 3vh;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #bcb8b1;
+}
+
+/* /----------------- Index -----------------/ */
+
+.line {
+    background-color: #8a817c;
+    width: 100%;
+    height: 2px;
+    transition: 0.5s;
+}
+
+.active:hover .line {
+    background-color: #bcb8b1;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    padding-top: 55.6px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.kiri {
+    width: 63%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.judul-1 {
+    font-size: 60px;
+    display: flex;
+}
+
+.font-1 {
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F4F3EE;
+    z-index: 10;
+
+}
+
+.font-2 {
+    position: absolute;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    background-color: #F4F3EE;
+    transition: 1s;
+}
+
+.kiri:hover .font-2 {
+    transform: translateX(191px);
+}         
+
+.deskripsi-1 {
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    margin-top: 18px;
+    margin-bottom: 36px;
+}
+
+.button-1 {
+    padding: 8px 15px; /* atas bawah 8px kiri kanan 15px */
+    border-radius: 12px;
+    background-color: transparent;
+    transition: 1s;
+}
+
+.button-1:hover {
+    background-color: rgba(138, 129, 124, 0.3);
+    color: black;
+}
+
+.kanan {
+    width: 37%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.judul-2 {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #7F5539;
+}
+
+.view-1 {
+    padding: 18px;
+    display: flex;
+    position: relative;
+    height: calc(100vh - 18px);
+}
+
+.illustration {
+    width: 90%;
+    height: 100%;
+}
+
+.view-2 {
+    padding: 18px;
+    position: relative;
+    height: calc(100vh - 18px);
+    background-color: #B08968;
+}
+
+.image-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: 75%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+.card-1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    top: -5%;
+}
+
+.deskripsi-2 {
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    padding: 9px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 80%;
+    border-radius: 12px;
+    z-index: 10;
+}
+
+.view-3 {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    position: relative;
+    height: calc(100vh - 18px);
+    background-color: #DDB892;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.konten-1 {
+    width: 80%;
+    height: 80%;
+}
+
+.image-none {
+    background-color: #3c50eb;
+    width: 100%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.judul-3 {
+    width: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.indonesia {
+    width: 80%;
+    height: 80%;
+    background-color: #463f3a;
+}
+
+.view-4 {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+.view-4 video,
+.bg-video video {
+    width: 100%;
+    height: 100%;
+}
+.button-2 {
+    border: 2px solid;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 12px;
+    background-color: transparent;
+    border-color: #F4F3EE;
+    transition: 1s;
+    color: #F4F3EE;
+    text-decoration: none;
+}
+
+.button-2:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.judul {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    width: 59%;
+    color: #f7f7f7;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+/* /----------------- Edukatif -----------------/ */
+
+.carousel{
+    background-color: #DDB892;
+}
+
+.carousel-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.three-d {
+    width: 50%;
+    height: calc(100vh - 18px);
+    display: flex;
+    align-items: center;
+}
+
+.model {
+    width: 100%;
+    height: 80%;
+    background-color: #3c50eb;
+}
+
+.carousel-description {
+    width: 50%;
+    height: calc(80vh - 18px);
+    display: flex;
+    align-items: center;
+    padding-left: 9px;
+    padding-right: 9px;
+    background-color: rgba(237, 224, 212, 0.2);
+}
+
+.content-carousel {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  space-between;
+    align-items: center;
+}
+
+.judul-edukatif-1 {
+    text-align: end;
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.deskripsi-edukatif-1 {
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.button-carousel {
+    border: 2px solid;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 12px;
+}
+
+
+.timeline-edukasi{
+    padding: 18px;
+    width: 100%;
+    height: calc(100vh - 18px);
+    padding: 18px;
+    background-color: #B08968;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;  
+    flex-direction: column;
+    
+}
+
+.container-timeline{
+    width: 100%;
+    height: fit-content;
+    flex: 1;
+}
+
+.gambar-timeline{
+    background-color: #3c50eb;
+    width: 55%;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nama-model-timeline{
+    font-size: 10px;
+    width: 100%;
+    flex: 1;
+}
+
+.tahun-timeline{
+    background-color: #3c50eb;
+    width: 100%;
+    height: 10vh;
+    border-radius: 15px;
+}
+
+/* /----------------- Galeri -----------------/ */
+/* /----------------- Hubungi -----------------/ */
+.card {
+    background-color: #bdb76baf;
+    width: 40%;
+    padding: 2vh;
+    border-radius: 20px;
+}
+
+/* .content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+.input-group {
+    position: relative;
+}
+
+.input-group__input {
+    font: inherit;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: 2px solid #fff;
+    background-color: transparent;
+    transition: outline-color 500ms;
+}
+
+.input-group__input:is(:focus, :valid) {
+    outline-color: #3c50eb;
+}
+
+.input-group__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: 10px 10px;
+    color: #fff;
+    transition: translate 500ms, scale 500ms;
+}
+
+.input-group_input:focus+.input-group_label,
+.input-group_input:valid+.input-group_label {
+    padding-inline: 5px;
+    translate: 10px -14px;
+    scale: 0, 8;
+    /* background-color: #000; */
+}
