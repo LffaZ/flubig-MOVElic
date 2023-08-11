@@ -496,21 +496,30 @@ li a {
     border-radius: 30px;
 }
 /*----------------- Hubungi -----------------*/
+
+.content{
+    position: relative;
+}
+
 .card {
     position: absolute;
     display: flex;
     justify-content: center;
-    top: -5%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(231, 150, 45, 0.8);
 }
 .card-body {
     font-weight: 400;
     /* font-family: 'Montserrat', sans-serif; */
+    display: flex;
+    flex-wrap: wrap;
     text-align: justify;
     justify-content: center;
     align-items: center;
     padding: 9px;
-    background-color: rgba(231, 150, 45, 0.8);
-    width: 40%;
+    width: 100%;
     border-radius: 20px;
     z-index: 10;
 }
@@ -523,7 +532,9 @@ li a {
 
 .input-group {
     position: relative;
-    margin-bottom: 15px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    width: 70%;
 }
 
 .input-group__input {
@@ -535,7 +546,24 @@ li a {
     outline: 2px solid #fff;
     background-color: transparent;
     transition: outline-color 500ms;
-    width: 90%;
+    width: 100%;
+}
+
+.button-hubungi{
+    width: 70%;
+    background-color: transparent;
+    border: solid white;
+    border-radius: 6px;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    transition: 1s;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.button-hubungi:hover{
+    background-color: rgba(201, 236, 236, 0.3);
 }
 
 .input-group__input:is(:focus, :valid) {
