@@ -1,0 +1,11 @@
+Model Information:
+* title:	CC 206 (GE-CM20EMP locomotive) - PT. KAI
+* source:	https://sketchfab.com/3d-models/cc-206-ge-cm20emp-locomotive-pt-kai-b2c2e6c802774f51955a9479a6c2b901
+* author:	pucohensap (https://sketchfab.com/pucohensap)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "CC 206 (GE-CM20EMP locomotive) - PT. KAI" (https://sketchfab.com/3d-models/cc-206-ge-cm20emp-locomotive-pt-kai-b2c2e6c802774f51955a9479a6c2b901) by pucohensap (https://sketchfab.com/pucohensap) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

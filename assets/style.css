@@ -45,8 +45,6 @@ li a {
     color: rgb(201, 236, 236);
 }
 
-
-
 /* ----------------- Scroll bar ----------------- */
 ::-webkit-scrollbar {
     width: 13px;
@@ -94,7 +92,7 @@ li a {
 }
 
 .judul-1 {
-    font-size: 60px;
+    font-size: 100px;
     display: flex;
 }
 
@@ -108,6 +106,7 @@ li a {
 
 .font-2 {
     position: absolute;
+    left: 10.2%;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
@@ -115,8 +114,8 @@ li a {
     transition: 1s;
 }
 
-.kiri:hover .font-2 {
-    transform: translateX(191px);
+.judul-1:hover .font-2 {
+    transform: translateX(205px);
 }         
 
 .deskripsi-1 {
@@ -159,7 +158,7 @@ li a {
 }
 
 .view-1 {
-    padding: 18px;
+    padding: 18px 18px 18px 25px;
     display: flex;
     position: relative;
     height: calc(100vh - 18px);
@@ -179,6 +178,7 @@ li a {
 
 .image-div {
     width: 100%;
+    max-height: 70%;
     display: flex;
     justify-content: center;
 }
@@ -196,16 +196,28 @@ li a {
     padding-bottom: 50px;
     top: -5%;
 }
+.bg-deskripsi-2 {
+    position: absolute;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    padding: 9px;
+    background-color: #fff;
+    mix-blend-mode: soft-light;
+    backdrop-filter: blur(10px);
 
+    width: 80%;
+    border-radius: 12px;
+    z-index: 10;
+}
 .deskripsi-2 {
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
     padding: 9px;
-    background-color: rgba(255, 255, 255, 0.8);
     width: 80%;
     border-radius: 12px;
-    z-index: 10;
+    z-index: 12;
 }
 
 .view-3 {
@@ -215,6 +227,7 @@ li a {
     padding-bottom: 18px;
     position: relative;
     height: calc(100vh - 18px);
+
     background-color: #DDB892;
     display: flex;
     align-items: center;
@@ -235,6 +248,7 @@ li a {
 }
 
 .judul-3 {
+    padding-top: 20px;
     width: auto;
     text-align: center;
     margin-left: auto;
@@ -279,22 +293,29 @@ li a {
     color: black;
 }
 
-.judul {
+.judul-4 {
     position: absolute;
     top: 50%;
-    left: 16px;
+    left: 25px;
     width: 59%;
-    color: #f7f7f7;
-    /* font-family: 'Raleway', sans-serif; */
+    color: #fdffe3;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*----------------- Edukatif -----------------*/
-.carousel{
+.carousel {
+    display: flex;
+    flex-direction: row;
     background-color: #DDB892;
     height: calc(100vh - 80px);
+    width: 100%; 
+    overflow: hidden;
 }
 .carousel-content {
     display: flex;
+    /* transform: translateX(70%);  */
+    
+    width: 100vw;
     flex-wrap: wrap;
     padding: 18px 18px 0;
     justify-content: center;
@@ -311,16 +332,22 @@ li a {
 .model {
     width: 100%;
     height: 80%;
-    background-color: #3c50eb;
+    background-color: transparent;
 }
-
+.model model-viewer {
+    width: 100%;
+    height: 100%;
+}
+.model model-viewer:focus {
+    border: transparent;
+}
 .carousel-description {
     width: 50%;
     height: calc(80vh - 18px);
     display: flex;
     align-items: center;
-    padding-left: 9px;
-    padding-right: 9px;
+    padding: 0 20px;
+    border-radius: 9px;
     background-color: rgba(237, 224, 212, 0.2);
 }
 
@@ -334,31 +361,42 @@ li a {
 }
 
 .judul-edukatif-1 {
+    text-transform: uppercase;
+    font-size: xxx-large;
     text-align: end;
     width: 100%;
-    padding-right: 5%;
-    padding-left: 5%;
+    padding: 0 5%;
 }
 
 .deskripsi-edukatif-1 {
     width: 100%;
+    text-align: justify;
+    padding: 0 3%;
 }
 
+.button-timeline {
+    font-size: 15px;
+    border: 2px solid;
+    padding: 2px 15px;
+    border-radius: 10px;
+}
+.model button {
+    display: flex;
+    position: relative;
+    top: -12%;
+    left: 40%;
+    z-index: 2;
+}
 .button-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 40px;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding: 0 3%;
 }
-
 .button-carousel {
     border: 2px solid;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 2px 15px;
     border-radius: 12px;
 }
 
@@ -420,6 +458,20 @@ li a {
 }
 
 /*----------------- Galeri -----------------*/
+@media screen and (max-width: 600px) {
+    .content-galeri {
+        flex-direction: column;
+    }
+    /* wait ini error ga ngefek⬇️ */
+    .container-img-galeri-1,
+    .container-img-galeri-2,
+    .container-img-galeri-3,
+    .container-img-galeri-4,
+    .container-img-galeri-5,
+    .container-img-galeri-6 {
+        padding-top: 30px;
+    }
+}
 
 .view-1-galeri{
     background-color: #7F5539;
@@ -441,66 +493,69 @@ li a {
 }
 
 
+.container-img-galeri-1,
+.container-img-galeri-2,
+.container-img-galeri-3,
+.container-img-galeri-4,
+.container-img-galeri-5,
+.container-img-galeri-6 {
+    position: relative;
+    padding-top: 9px;
+    overflow: hidden;
+}
 .container-img-galeri-1{
-    position: relative;
-    height: 30%;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    height: calc(30% - 9px);
 }
-
 .container-img-galeri-2{
-    position: relative;
-    height: 70%;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    height: calc(70% - 9px);
 }
-
 .container-img-galeri-3{
-    position: relative;
-    height: 60%;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    height: calc(60% - 9px);
 }
-
 .container-img-galeri-4{
-    position: relative;
-    height: 40%;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    height: calc(40% - 9px);
 }
-
 .container-img-galeri-5{
-    position: relative;
-    height: 70%;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    height: calc(70% - 9px);
 }
-
 .container-img-galeri-6{
-    position: relative;
-    height: 30%;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    height: calc(30% - 9px);
 }
 
-.judul-img-galeri{
+.judul-img-galeri {
     position: absolute;
     bottom: 0;
     padding-left: 9px;
-    padding-bottom: 9px;
+    padding-bottom: 5px;
+    transform: translateY(40px);
+    transition: 0.5s;
 }
 
 .img-galeri{
     width: 100%;
     height: 100%;
-    border-radius: 30px;
+    border-radius: 15px;
+}
+
+.container-img-galeri-1:hover .judul-img-galeri,
+.container-img-galeri-2:hover .judul-img-galeri,
+.container-img-galeri-3:hover .judul-img-galeri,
+.container-img-galeri-4:hover .judul-img-galeri,
+.container-img-galeri-5:hover .judul-img-galeri,
+.container-img-galeri-6:hover .judul-img-galeri {
+    transform: translateY(1px);
 }
 /*----------------- Hubungi -----------------*/
 
 .content{
-    position: relative;
+    /* position: relative; */
+    
 }
-
+.bg-video video {
+    object-fit: cover;
+    width: 100%;
+    height: 87vh;
+}
 .card {
     position: absolute;
     display: flex;
@@ -508,8 +563,18 @@ li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(231, 150, 45, 0.8);
-
+}
+.bg-card {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    mix-blend-mode: soft-light;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
 }
 .card-body {
     font-weight: 400;
@@ -528,7 +593,7 @@ li a {
     margin-bottom: 20px;
     margin-top: 10px;
     text-align: center;
-    color: #fff;
+    color: #38342e;
 }
 
 .input-group {

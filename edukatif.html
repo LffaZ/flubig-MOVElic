@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="refresh" content="3"> -->
     <title>Edukatif - MOVElic</title>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" type="image/png" href="assets/M.png" src="assets/M.png">
     
     <script src="assets/script.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 </head>
 
 <body>
@@ -21,16 +21,18 @@
     </div>
     <div class="container">
         <div class="carousel">
-            <div class="carousel-content">
+            <section id="bus-content">
+                <div class="carousel-content">
                 <div class="three-d">
                     <div class="model">
-                        <img src="#">
-                        <button class="button-timeline"><a href="timeline/model1.html">Timeline</a></button>
+                        <!-- <img src="#"> -->
+                        <!-- <model-viewer alt="source: gatau" src="assets\3d-model\bus-1.glb" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer> -->
+                        <button class="button-timeline"><a href="timeline/bus.html">Timeline</a></button>
                     </div>
                 </div>
                 <div class="carousel-description">
                     <div class="content-carousel">
-                        <h1 class="judul-edukatif-1">Nama Kendaraan</h1>
+                        <h1 class="judul-edukatif-1">Bus</h1>
                         <p class="deskripsi-edukatif-1">Deskripsi model, Phasellus accumsan, tortor id egestas iaculis,
                             ex est malesuada orci, ut pretium nibh dui at enim. Curabitur at lobortis nunc, vitae varius
                             arcu. Nullam interdum, magna id gravida sollicitudin, dolor sapien vestibulum lacus, nec
@@ -38,42 +40,48 @@
                             lacus nisl, sagittis eget nunc eget, gravida volutpat urna. Pellentesque ac sem nisl.
                             Integer ullamcorper leo non ante rhoncus semper.</p>
                         <div class="button-container">
-                            <button class="button-carousel">← Back</button>
-                            <button class="button-carousel">Next →</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="carousel-content">
-                <div class="three-d">
-                    <div class="model">
-                        <img src="#">
-                        <button class="button-timeline"><a href="timeline/model1.html">Timeline</a></button>
-                    </div>
-                </div>
-                <div class="carousel-description">
-                    <div class="content-carousel">
-                        <h1 class="judul-edukatif-1">Nama Kendaraan 2</h1>
-                        <p class="deskripsi-edukatif-1">Deskripsi model, Phasellus accumsan, tortor id egestas iaculis,
-                            ex est malesuada orci, ut pretium nibh dui at enim. Curabitur at lobortis nunc, vitae varius
-                            arcu. Nullam interdum, magna id gravida sollicitudin, dolor sapien vestibulum lacus, nec
-                            eleifend orci augue et orci. Vestibulum ut leo tempus, vehicula elit et, dapibus nisl. Etiam
-                            lacus nisl, sagittis eget nunc eget, gravida volutpat urna. Pellentesque ac sem nisl.
-                            Integer ullamcorper leo non ante rhoncus semper.</p>
-                        <div class="button-container">
-                            <button class="button-carousel">← Back</button>
-                            <button class="button-carousel">Next →</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            <a href="#feeder-content"><button class="button-carousel">← Back</button></a>
+                            <a href="#train-content"><button class="button-carousel">Next →</button></a>
 
-            <div class="carousel-content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            
+            <section id="train-content">
+                <div class="carousel-content">
+                <div class="three-d">
+                    <div class="model">
+                        <!-- <img src="#"> -->
+                        <!-- <model-viewer alt="source: gatau" src="assets\3d-model\scene.gltf" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer> -->
+                        <button class="button-timeline"><a href="timeline/train.html">Timeline</a></button>
+                    </div>
+                </div>
+                <div class="carousel-description">
+                    <div class="content-carousel">
+                        <h1 class="judul-edukatif-1">Kereta</h1>
+                        <p class="deskripsi-edukatif-1">Deskripsi model, Phasellus accumsan, tortor id egestas iaculis,
+                            ex est malesuada orci, ut pretium nibh dui at enim. Curabitur at lobortis nunc, vitae varius
+                            arcu. Nullam interdum, magna id gravida sollicitudin, dolor sapien vestibulum lacus, nec
+                            eleifend orci augue et orci. Vestibulum ut leo tempus, vehicula elit et, dapibus nisl. Etiam
+                            lacus nisl, sagittis eget nunc eget, gravida volutpat urna. Pellentesque ac sem nisl.
+                            Integer ullamcorper leo non ante rhoncus semper.</p>
+                        <div class="button-container">
+                            <a href="#bus-content"><button class="button-carousel">← Back</button></a>
+                            <a href="#feeder-content"><button class="button-carousel">Next →</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            
+            <section id="feeder-content">
+                <div class="carousel-content">
                 <div class="three-d">
                     <div class="model">
                         <img src="#">
-                        <button class="button-timeline"><a href="timeline/model1.html">Timeline</a></button>
+                        <button class="button-timeline"><a href="timeline/feeder.html">Timeline</a></button>
                     </div>
                 </div>
                 <div class="carousel-description">
@@ -86,12 +94,13 @@
                             lacus nisl, sagittis eget nunc eget, gravida volutpat urna. Pellentesque ac sem nisl.
                             Integer ullamcorper leo non ante rhoncus semper.</p>
                         <div class="button-container">
-                            <button class="button-carousel">← Back</button>
-                            <button class="button-carousel">Next →</button>
+                            <a href="#train-content"><button class="button-carousel">← Back</button></a>
+                            <a href="#bus-content"><button class="button-carousel">Next →</button></a>
                         </div>
                     </div>
                 </div>
             </div>
+            </section>
         </div>
         
         <div class="copyright"><b>© 2023, MOVE</b><i>lic</i></div>
