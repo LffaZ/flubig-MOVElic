@@ -379,6 +379,10 @@ ul {
     border: 2px solid;
     padding: 2px 15px;
     border-radius: 10px;
+    background-color: transparent;
+}
+.button-timeline a {
+    color: #000;
 }
 .model button {
     display: flex;
@@ -398,6 +402,8 @@ ul {
     border: 2px solid;
     padding: 2px 15px;
     border-radius: 12px;
+    background-color: transparent;
+    color: black;
 }
 
 /*----------------- Edukatif - Timeline -----------------*/
