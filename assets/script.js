@@ -8,6 +8,7 @@ function changeImage(newImage) {
 
     for (const targetElement of targetElements) {
         const imgElement = targetElement.querySelector('.image-timeline');
+
         console.log(newImage.replace("-"," "));
         
         imgElement.style.opacity = 0; // Set opacity ke 0 (transparan) sebelum pergantian gambar
@@ -17,7 +18,13 @@ function changeImage(newImage) {
             imgElement.title = newImage.substring(newImage.lastIndexOf('/') + 1).split('.')[0].replace("-"," ");
             imgElement.title = imgElement.title.charAt(0).toUpperCase() + imgElement.title.slice(1);
             console.log(imgElement);
-            imgElement.classList.add('active');
+
+            var lineElement = document.getElementsByClassName('cek-bentar').;
+            const activeYear = targetElement.querySelector('.line-year');
+            // var activeLine = activeYear.getElementsByClassName('line-year');
+            console.log(lineElement);
+
+            activeYear.setAttribute('class', 'active');
             imgElement.style.opacity = 1; // Set opacity kembali ke 1 (normal) setelah pergantian gambar
         }, 200);
     }
