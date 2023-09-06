@@ -11,55 +11,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,300&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/png" href="/assets/M.png" src="/assets/M.png">
-
-    <script src="/assets/script.js"></script>
-</head>
-
-<body>
-    <div class="navbar">
-        <li><a href="/./index.html" class="navlink">Home</a></li>
-        <li><a href="/./edukatif.html" class="navlink active">Edukatif<div class="line"></div></a></li>
-        <li><a href="/./galeri.html" class="navlink">Galeri</a></li>
-        <li><a href="/./hubungi.html" class="navlink">Dapatkan Pemberitahuan</a></li>
-        <!-- <li><a href="/./hubungi.html" class="navlink">Coba Sekarang</a></li> -->
-    </div>
-    <div class="container">
-        <div class="timeline-edukasi">
-            <a href="/./edukatif.html#bus-content"><button class="back-button">
-                    << /button></a>
-            <div class="timeline-content">
-                <div class="container-timeline">
-                    <div class="image-timeline-div">
-                        <img src="/assets/edukatif/bus/delman.jpg" class="image-timeline">
+        <link rel="icon" type="image/png" href="/assets/M.png" src="/assets/M.png">
+        
+        <script src="/assets/script.js"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <li><a href="/./index.html" class="navlink">Home</a></li>
+            <li><a href="/./edukatif.html" class="navlink active">Edukatif<div class="line"></div></a></li>
+            <li><a href="/./galeri.html" class="navlink">Galeri</a></li>
+            <li><a href="/./hubungi.html" class="navlink">Dapatkan Pemberitahuan</a></li>
+            <!-- <li><a href="/./hubungi.html" class="navlink">Coba Sekarang</a></li> -->
+        </div>
+        <div class="container">
+            <div class="timeline-edukasi">
+                <a href="/./edukatif.html#bus-content"><button class="back-button"><</button></a>
+                <div class="timeline-content">
+                    <div class="container-timeline">
+                        <div class="image-timeline-div">
+                            <img src="/assets/edukatif/bus/delman.jpg" class="image-timeline">
+                        </div>
+                    </div>
+                    <div class="nama-model-timeline">
+                        Delman
+                    </div>
+                    <div class="tahun-timeline">
+                        <ul>
+                            <li class="cek-bentar" onclick="changeImage('delman.jpg')" id="delman">1950 - 1955<div class="line-year"></div></li>
+                            <li class="cek-bentar" onclick="changeImage('bus-diesel.jpg')" id="bus-diesel">1956 - 1980<div class="line-year"></div></li>
+                            <li class="cek-bentar" onclick="changeImage('bus-tingkat.jpg')" id="bus-tingkat">1968 - 1990<div class="line-year"></div></li>
+                            <li class="cek-bentar" onclick="changeImage('metromini.jpg')" id="metromini">1982 - 2018<div class="line-year"></div></li>
+                            <li class="cek-bentar" onclick="changeImage('damri.png')" id="damri">1971 - Sekarang<div class="line-year"></div></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="nama-model-timeline">
-                    Bus
-                </div>
-                <div class="tahun-timeline">
-                    <ul>
-                        <li class="cek-bentar" onclick="changeImage('delman.jpg')">1950 - 1955<div class="line-year">
-                            </div>
-                        </li>
-                        <li class="cek-bentar" onclick="changeImage('bus-diesel.jpg')">1956 - 1980<div
-                                class="line-year"></div>
-                        </li>
-                        <li class="cek-bentar" onclick="changeImage('bus-tingkat.jpg')">1968 - 1990<div
-                                class="line-year"></div>
-                        </li>
-                        <li class="cek-bentar" onclick="changeImage('metromini.jpg')">1982 - 2018<div class="line-year">
-                            </div>
-                        </li>
-                        <li class="cek-bentar" onclick="changeImage('damri.png')">1971 - Sekarang<div class="line-year">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
             </div>
+            <div class="copyright"><b>© 2023, MOVE</b><i>lic</i></div>
         </div>
-        <div class="copyright"><b>© 2023, MOVE</b><i>lic</i></div>
-    </div>
-</body>
-
+    </body>
 </html>

@@ -11,46 +11,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,300&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/png" href="/assets/M.png" src="/assets/M.png">
-
-    <script src="/assets/script.js"></script>
-</head>
-
-<body>
-    <div class="navbar">
-        <li><a href="/./index.html" class="navlink">Home</a></li>
-        <li><a href="/./edukatif.html" class="navlink active">Edukatif<div class="line"></div></a></li>
-        <li><a href="/./galeri.html" class="navlink">Galeri</a></li>
-        <li><a href="/./hubungi.html" class="navlink">Dapatkan Pemberitahuan</a></li>
-        <!-- <li><a href="/./hubungi.html" class="navlink">Coba Sekarang</a></li> -->
-    </div>
-    <div class="container">
-        <div class="timeline-edukasi">
-            <a href="/./edukatif.html#train-content"><button class="back-button">←</button></a>
-            <div class="timeline-content">
-                <div class="container-timeline">
-                    <div class="image-timeline-div">
-                        <img src="/assets/edukatif/kereta/trem.png" class="image-timeline">
+        <link rel="icon" type="image/png" href="/assets/M.png" src="/assets/M.png">
+        
+        <script src="/assets/script.js"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <li><a href="/./index.html" class="navlink">Home</a></li>
+            <li><a href="/./edukatif.html" class="navlink active">Edukatif<div class="line"></div></a></li>
+            <li><a href="/./galeri.html" class="navlink">Galeri</a></li>
+            <li><a href="/./hubungi.html" class="navlink">Dapatkan Pemberitahuan</a></li>
+            <!-- <li><a href="/./hubungi.html" class="navlink">Coba Sekarang</a></li> -->
+        </div>
+        <div class="container">
+            <div class="timeline-edukasi">
+                <a href="/./edukatif.html#train-content"><button class="back-button">←</button></a>
+                <div class="timeline-content">
+                    <div class="container-timeline">
+                        <div class="image-timeline-div">
+                            <img src="/assets/edukatif/kereta/trem.png" class="image-timeline">
+                        </div>
+                    </div>
+                    <div class="nama-model-timeline">
+                        Trem
+                    </div>
+                    <div class="tahun-timeline">
+                        <ul>
+                            <li onclick="changeImage('trem.png')" id="trem">1869 - 1960<div class="line-year"></div></li>
+                            <!-- <li>1867 - YYYY</li> -->
+                            <li onclick="changeImage('kereta-uap.png')" id="kereta-uap">1870 - 1920<div class="line-year"></div></li>
+                            <li onclick="changeImage('kereta-listrik.png')" id="kereta-listrik">1921 - Sekarang<div class="line-year"></div></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="nama-model-timeline">
-                    Kereta
-                </div>
-                <div class="tahun-timeline">
-                    <ul>
-                        <li onclick="changeImage('trem.png')">1869 - 1960<div class="line-year"></div>
-                        </li>
-                        <!-- <li>1867 - YYYY</li> -->
-                        <li onclick="changeImage('kereta-uap.png')">1870 - 1920<div class="line-year"></div>
-                        </li>
-                        <li onclick="changeImage('kereta-listrik.png')">1921 - Sekarang<div class="line-year"></div>
-                        </li>
-                    </ul>
-                </div>
             </div>
+            <div class="copyright"><b>© 2023, MOVE</b><i>lic</i></div>
         </div>
-        <div class="copyright"><b>© 2023, MOVE</b><i>lic</i></div>
-    </div>
-</body>
-
+    </body>
 </html>
